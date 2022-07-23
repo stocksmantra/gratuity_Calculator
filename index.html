@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratuity Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Gratuity Calculator</h1>
+    <div class="container">
+    Monthly salary (Basic+DA)<span id="output_1"></span><input type="number" min="10000" max="1000000" value="1000"
+        name="Monthly salary (Basic+DA) " id="salary">
+<br>
+    Years of service<span id="output_2"></span> <input type="number" min="5" max="50" value="5" name="Years of service"
+        id="years">
+
+
+<br>
+
+    <button onclick="answer()">Calculate</button>
+    <p>Total Gratuity payable:<br> <span id="outputt"></span></p>
+</div>
+</body>
+
+<script>
+    function answer() {
+
+
+        var b = parseInt(document.getElementById("salary").value);
+        var n = parseInt(document.getElementById("years").value);
+
+        var total_gratuity = n * b * 15 / 26;
+
+        document.getElementById("outputt").innerHTML = total_gratuity;
+    }
+</script>
+
+</html>
