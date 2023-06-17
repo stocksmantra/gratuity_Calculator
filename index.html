@@ -6,60 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gratuity Calculator</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1 style="text-align: center;">Gratuity Calculator</h1>
-<!-- -------------------Here starts code--------------------- -->
+  <h1>Gratuity Calculator</h1>
   <div class="container">
-    <p> <u>Monthly salary (Basic+DA)</u></p>
-    <input type="range" min="10000" max="1000000" value="10000" class="slider" id="myRange">
-    <p>Value: <span id="demo"></span></p>
+    <p>Monthly salary (Basic+DA) <input type="number" min="10000" max="10000000" value="10000" class="slider"
+        id="myRangeValue"></p><br><br>
+    <input type="range" min="10000" max="10000000" value="10000" class="slider" id="myRange"> <br><br>
 
-    <p> <u>Years of service</u></p>
-    <input type="range" min="5" max="80" value="5" class="slider1" id="myRange1">
-    <p>Value: <span id="demo1"></span></p>
+    <p>Years of service <input type="number" min="5" max="80" value="5" class="slider1" id="myRange1Value"></p><br><br>
+    <input type="range" min="5" max="80" value="5" class="slider1" id="myRange1"> <br> <br>
 
-
-    <button onclick="answer()">Calculate</button>
-    <p>Total Gratuity payable:<br> <span id="outputt"></span></p>
+    <div class="center">
+      <button onclick="calculateGratuity()">Calculate</button>
+    </div>
+    <br>
+    <div id="demo">
+      <p><b>Total Gratuity payable: <br><br><span id="outputt"></span></b></p>
+    </div>
 
   </div>
-
-  <script>
-    function answer() {
-
-
-      var b = parseInt(document.getElementById("myRange").value);
-      var n = parseInt(document.getElementById("myRange1").value);
-
-      var total_gratuity = n * b * 15 / 26;
-
-      document.getElementById("outputt").innerHTML = total_gratuity;
-    }
-
-
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-    output.innerHTML = slider.value;
-
-    slider.oninput = function () {
-      output.innerHTML = this.value;
-    }
-
-    var slider1 = document.getElementById("myRange1");
-    var output1 = document.getElementById("demo1");
-    output1.innerHTML = slider1.value;
-
-    slider1.oninput = function () {
-      output1.innerHTML = this.value;
-    }
-
-  </script>
-
-
-
+  <script src="main.js"></script>
 </body>
 
 </html>

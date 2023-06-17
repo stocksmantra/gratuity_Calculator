@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background-color: rgb(204, 255, 199);
+    background-size: cover;
+
+}
+.container{
+   /* text-align: center;
+   color: rgb(227, 230, 51);
+   font-size: 30px;
+    background-color: #b8c2db;
+    height: 510px;
+    width: 700px;
+    margin-top: 10px;
+    margin-left: 280px;
+    padding-top: 30px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgb(252, 67, 227); */
+    
+    width: 600px;
+    height: 400px;
+    margin:  auto;
+    background-color: #d9dbdf;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.center {
+    display: flex;
+    justify-content: center;
+    
+  }
+    h1 {
+        text-align: center;
+        color: #000000;
+        font-size: 45px;
+        font-family: sans-serif;
+        padding: 1px;
+    }
+   
+button{
+
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #04AA6D;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: 5px 20px 20px 2px rgb(172, 202, 192);
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+}
+input[type="number"],
+    input[type="range"] {
+      float: right;
+      margin-bottom: 10px;
+    }
+
+
+p{
+    margin: 20px;
+    margin-top: 10px;
+    color: #000000;
+}
+
+
+#myRange {
+    width: 550px;
+    height: 7px;
+    margin-left: auto;
+    margin-right: 20px;
+   
+}
+
+
+#myRange1 {
+    width: 550px;
+    height: 7px;
+    margin-left: auto;
+    margin-right: 20px;
+   
+}
+#demo{
+   text-align: center;
+
+}
+
+button {
+    -webkit-appearance: none;
+    width: 250px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 25px;
+    outline: none;
+    opacity: 0.8;
+    box-shadow: #f87ed0;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+button:hover {
+    opacity: 1;
+}
+
